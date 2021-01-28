@@ -1,0 +1,3 @@
+clear
+cd scriptFile
+python prediction_computation-top_10_recommendation.py

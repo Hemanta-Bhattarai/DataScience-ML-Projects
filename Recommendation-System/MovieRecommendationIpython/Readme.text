@@ -1,0 +1,53 @@
+
+#--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+This folder contains primary files important for the movie recommendation system:
+1 u.data
+	This is data file which contains 4 coulumns, first columns is for userid, 2nd column is for movieId, third is for ratings and fourth is for timestamp.
+
+2. movies.csv
+	It contains three columns first columns is for movieId, second is for name of movie and third is for genres of movie.
+
+3.splitTestValidTrain.ipynb
+	This is the ipython notebook file which help to split the entire data i.e u.data to test set, validation set and training set. The output file are:
+	 small_test_set.csv
+	small_valid_set.csv
+	small_train_set.csv
+	small_trainValid_set.csv
+
+4.cosineBSMFast.ipynb
+	This is the ipython notebook that helps to generate similarity matrix based on the cosine based similarity and saves the simililary matrix in the file "cosineBasedSimilarityFast.out"
+
+5.adjustedcosineBSMFast.ipynb
+	This is the ipython notebook that helps to generate similarity matrix based on the adjusted cosine similarity and saves the similarity matrix in the file "adjustedCosineSimilarityFast.out"
+
+6. correlationBSMFast.ipynb
+	This is the ipython notebook that helps to generate similarity matrix based on the correlation similarity and saves the similarity matrix to the file "correlatedBasedSimilarityFast.out"
+
+7.prediction_computatoin.ipynb
+	This is the ipython notebook file which helps to find the error in the model for a given data set.
+
+8.TopTenMovie.ipynb
+	This is the ipython notebook file which helps to recommend top 10 movies based on the similarity matrix calculated and userId of user given.
+
+
+#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+The output file when the program is run or each .ipynb file is run
+	1.smalltrainValid_set.csv
+	2.small_train_set.csv
+	3.small_valid_set.csv
+	4.small_test_set.csv
+	5.cosineBasedSimilarityFast.out
+	6.adjustedCosineSimilarityFast.out
+	7.correlatedBasedSimilarityFast.out
+
+
+
+#=====================================================================================================================================================
+The program must be ran in given sequence for new data file whose format should be as u.data and named as u.data
+1. splitTestValidTrain.ipynb
+2.cosineBSMFast.ipynb
+3.adjustedCosineBSMFast.ipynb
+4.correlationBSMFast.ipynb
+5.prediction_computation.ipynb
+6.TopTenMovie.ipynb
+
